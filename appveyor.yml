@@ -28,7 +28,7 @@ install:
 build_script:
   - '%CYG_ROOT%\bin\bash -lc "git clone --quiet https://github.com/Chris00/opam-repository.git"'
   - '%CYG_ROOT%\bin\bash -lc "opam init -y -a opam-repository"'
-  - '%CYG_ROOT%/bin/bash -lc "eval $(opam config env) && opam install -y oasis"'
+  - '%CYG_ROOT%/bin/bash -lc "eval $(opam config env) && opam install -y mindstorm"'
 
-test_script:
-  - '%CYG_ROOT%/bin/bash -lc "oasis --help"'
+# test_script:
+#   - '%CYG_ROOT%/bin/bash -lc "oasis --help"'
